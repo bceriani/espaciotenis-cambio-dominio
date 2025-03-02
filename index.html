@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,7 @@
             box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
         }
-        
+
         body {
             background-color: #f0f0f0;
             display: flex;
@@ -21,7 +22,7 @@
             min-height: 100vh;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 800px;
             width: 100%;
@@ -31,7 +32,7 @@
             padding: 30px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        
+
         .logo {
             width: 100px;
             height: 100px;
@@ -43,25 +44,35 @@
             justify-content: center;
             overflow: hidden;
         }
-        
+
         .logo img {
             width: 80%;
             height: auto;
         }
-        
+
         h1 {
             color: #1a2c38;
             margin-bottom: 20px;
             font-size: 28px;
         }
-        
+
         p {
             color: #555;
             margin-bottom: 30px;
             font-size: 18px;
             line-height: 1.6;
         }
-        
+
+        .alert {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            border-left: 4px solid #ffeeba;
+            text-align: left;
+        }
+
         .redirect-btn {
             background-color: #007852;
             color: white;
@@ -75,11 +86,11 @@
             display: inline-block;
             margin-bottom: 20px;
         }
-        
+
         .redirect-btn:hover {
             background-color: #005e41;
         }
-        
+
         .locations {
             display: flex;
             flex-direction: column;
@@ -90,7 +101,7 @@
             margin-left: auto;
             margin-right: auto;
         }
-        
+
         .location-btn {
             background-color: #007852;
             color: white;
@@ -102,31 +113,31 @@
             transition: background-color 0.3s;
             text-decoration: none;
         }
-        
+
         .location-btn:hover {
             background-color: #005e41;
         }
-        
+
         .tennis-image {
             margin-top: 30px;
             max-width: 100%;
             height: auto;
             border-radius: 8px;
         }
-        
+
         @media (max-width: 600px) {
             .container {
                 padding: 20px;
             }
-            
+
             h1 {
                 font-size: 24px;
             }
-            
+
             p {
                 font-size: 16px;
             }
-            
+
             .redirect-btn {
                 padding: 12px 24px;
                 font-size: 16px;
@@ -134,22 +145,30 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="logo">
             <img src="https://espaciotenis.com/ligalogo_new.jpg" alt="Logo La Liga">
         </div>
-        
+
         <h1>¡Hemos cambiado de dominio!</h1>
-        
+
         <p>
-            Queremos informarte que hemos migrado de <strong>espaciotenissp.site</strong> a nuestro nuevo dominio <strong>espaciotenis.com</strong>
+            Queremos informarte que hemos migrado de <strong>espaciotenissp.site</strong> a nuestra nueva dirección
+            <strong>espaciotenis.com</strong>
         </p>
-        
+
+        <div class="alert" style="text-align: center;">
+            <strong>¡Importante!</strong> La dirección anterior (espaciotenissp.site) dejará de funcionar próximamente.
+            Por favor, actualiza tus marcadores o favoritos con nuestra nueva dirección web.
+        </div>
+
         <a href="https://espaciotenis.com" class="redirect-btn">
             Ir a espaciotenis.com
         </a>
 
     </div>
 </body>
+
 </html>
